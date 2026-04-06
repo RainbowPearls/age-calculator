@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  padding: 20px;
+}
+
+.card {
+  background: #f8f7ff;
+  border-radius: 24px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #1a1a2e;
+  margin-bottom: 22px;
+}
+
+/* Result */
+.result-box {
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: none;
+}
+
+.result-box.show { display: block; }
+
+.green  { background: #e8f5e9; color: #2e7d32; }
+.yellow { background: #fff9e6; color: #795548; }
+.red    { background: #fdecea; color: #c62828; }
+.blue   { background: #e3f2fd; color: #0d47a1; }
+
+/* Fields */
+.field {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  border-color: #764ba2;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #f97316, #ec4899);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
